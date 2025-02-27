@@ -845,6 +845,7 @@ class MyWindow(QWidget):
         try:
             if file_path:
                 print(file_path)
+                # 此处需要改成自己的项目路径作为前缀
                 base_path = "D:/MyCode/public_project/yolov5-traffic-app/"
                 # 使用 os.path.join 拼接路径
                 full_path = QUrl.fromLocalFile(os.path.join(base_path, file_path)).toString()
